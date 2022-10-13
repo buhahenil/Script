@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.6.1.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            console.log($);
+            console.log("ready!");
+            alert('alert')
+            //$('#button1,#button2').val("New Name For Button");//id selector
+            //$('.button').val("New Name For Button");//id selector
+            //$('[value="Click Me"]').val('Apply by Attribute');// attribute selector
+            //$('input').val('Apply by Attribute');// element selector
+            //$('#divFirst > .button').val('Apply by Attribute');// only first children
+            //$('#divFirst .button').val('Apply by Attribute');// all children
+            $('.button:gt(2)').val('Apply by Attribute');// all children but with exception
+
+        });</script>
+
+    <input type="button" id="button1" class="button" value="Click Me">
+    <div id="divFirst">
+        <input type="button" id="button2" class="button" value="Click Me">
+        <input type="button" id="button3" class="button" value="Click Me">
+        <div id="divSecond">
+            <input type="button" id="button4" class="button" value="Click Me">
+            <input type="button" id="button5" class="button" value="Click Me">
+            <input type="button" id="button6" class="button" value="Click Me">
+        </div>
+    </div>
+</body>
+</html>

@@ -33,3 +33,21 @@
     </div>
 </body>
 </html>
+
+******* .each *******
+$(document).ready(function () {
+            $('li#test').each(function (index, element) { // loop
+                console.log("Henil " + index + " : " + $(element).text())    // msg print
+            });
+
+            /*var listObj = $('li.test');
+            for (var i = 0; i < listObj.length; i++) {
+                element = listObj[i];
+                index = i;
+
+                alert("Hiren " +index + " : " + $(element).text());
+            }*/
+        });
+
+
+

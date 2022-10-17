@@ -55,5 +55,15 @@ $(document).ready(function () {
             $('div').wrap('<div class="containerDiv"></div>');  // wrap/unwrap/wrapall function
             alert($('div.containerDiv').length);
         });
-    </script>
+</script>
+
+**********  APPDEN ELEMENT  ************
+<script type="text/javascript">
+        $(document).ready(function () {
+            //$('div').append('<b> Tutorial</b>'); //append method
+            //$('<b> Tutorial</b>').appendTo($('div'));  // appendTo methodsame result
+            //$('div').prepend('<b> Tutorial</b>'); //prepend method is frist print the TUTORIAL 
+            //$('div').append($('#sapn1')); 
+        });
+</script>
 

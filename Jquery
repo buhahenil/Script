@@ -66,4 +66,24 @@ $(document).ready(function () {
             //$('div').append($('#sapn1')); 
         });
 </script>
+**********  EACH & $EACH    ************
+$(document).ready(function () {
+            var result = '';
+            $('li').each(function (index, element) {
+                result += 'Index = ' + index + ', Value = ' + $(element).text() + '<br/>';
+                //or
+                //result += 'Index = ' + index + ', Value = ' + $(this).text() + '<br/>';
+            });
+            $('#resultDiv').html(result);
+});
 
+ $(document).ready(function () {
+            var intArray = [100, 200, 300, 400, 500];
+            var result = '';
+
+            $.each(intArray, function (index, element) {
+                result += 'Index = ' + index + ', Value = ' + element + '<br/>';
+            });
+
+            $('#resultDiv').html(result);
+});
